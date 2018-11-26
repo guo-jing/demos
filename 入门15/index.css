@@ -1,0 +1,614 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.layout {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+}
+
+/*header CSS start*/
+#header {
+    background-image: url(http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/header-bg.jpg);
+    background-position: center;
+    height: 757px;
+}
+
+#header .start {
+    color: #fed136;
+    font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+    font-size: 28px;
+    margin-top: 35px;
+    margin-left: 15px;
+    display: inline-block;
+    float: left;
+}
+
+#header .start:hover {
+    cursor: pointer;
+}
+
+#header .menu {
+    padding-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 460px;
+}
+
+#header .menu > a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+#header .menu > a:hover {
+    color: #fed136;
+}
+
+#header .welcome-first {
+    margin-top: 245px;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+#header .welcome-second {
+    margin-top: 25px;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 75px;
+    line-height: 75px;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+}
+
+#header .more {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 220px;
+    height: 70px;
+    font-weight: 700;
+    background-color: #fed136;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 3px
+}
+
+#header .more:hover {
+    cursor: pointer;
+    background-color: #fec503;
+}
+/*header CSS end*/
+
+/*services CSS start*/
+#services {
+    padding-bottom: 160px;
+}
+
+#services .tittle {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+
+#services .sub-tittle {
+    text-align: center;
+    margin-top: 25px;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    color: #777;
+}
+
+#services .service-type {
+    margin-top: 80px;
+    text-align: center;
+}
+
+#services .service-type > div {
+    display: inline-block;
+    width: 360px;
+}
+
+#services .service-type > div .icon {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+    background-color: #fed136;
+    color: white;
+    border-radius: 50px;
+}
+
+#services .service-type > div .icon > .fa {
+    line-height: 100px;
+}
+
+#services .service-type > div .title {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#services .service-type > div .introduction {
+    display: inline-block;
+    margin-top: 25px;
+    color: #777;
+    font-size: 14px;
+}
+/*services CSS end*/
+
+/*portfolio CSS start*/
+#portfolio {
+    background-color: #f7f7f7;
+    padding-top: 150px;
+    padding-bottom: 180px;
+}
+
+#portfolio .tittle {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+}
+
+#portfolio .sub-tittle {
+    padding-top: 28px;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    color: #777;
+    text-align: center;
+}
+
+#portfolio .blocks {
+    margin-top: 75px;
+    text-align: center;
+}
+
+
+#portfolio .single-block .hover-area{
+    width: 360px;
+    height: 260px;
+}
+
+#portfolio .single-block .photo{
+    width: 360px;
+    height: 260px;
+}
+
+#portfolio .single-block .cover{
+    width: 360px;
+    height: 260px;
+    background: rgba(254, 209, 54, .9);
+    color: white;
+    text-align: center;
+    line-height: 260px;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#portfolio .single-block .fa {
+    vertical-align: middle;
+}
+
+#portfolio .single-block {
+    position: relative;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+#portfolio .single-block:nth-child(3n) {
+    margin-right: 0;
+}
+
+#portfolio .single-block .hover-area:hover .cover{
+    z-index: 2;
+    cursor: pointer;
+}
+
+#portfolio .introduction {
+    width: 360px;
+    height: 100px;
+    background-color: white;
+}
+
+#portfolio .introduction .name {
+    padding-top: 25px;
+    text-align: center;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#portfolio .introduction .design {
+    padding-top: 10px;
+    text-align: center;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #777;
+}
+/*portfolio CSS end*/
+
+/*about CSS start*/
+#about > .layout > .tittle {
+    margin-top: 150px;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    text-transform: Uppercase;
+}
+
+#about > .layout > .sub-tittle {
+    margin-top: 28px;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    color: #777;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#about .about-list {
+    list-style: none;
+}
+
+#about .about-list img {
+    width: 150px;
+    height: 150px;
+    border-radius: 82px;
+    border: 7px solid rgb(241, 241, 241);
+}
+
+#about .about-list > li {
+    text-align: center;
+    position: relative;
+}
+
+#about .about-list > li:nth-of-type(odd) > .text {
+    position: absolute;
+    top: 0;
+    width: 487px;
+    text-align: right;
+}
+
+#about .about-list > li:nth-of-type(even) > .text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 487px;
+    text-align: left;
+}
+
+#about .about-list .date,
+#about .about-list .tittle {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+#about .about-list .introduction {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.75;
+    font-weight: 400;
+}
+
+#about .about-list .vertical-line {
+    width: 0;
+    height: 100px;
+    border: 1px solid rgb(241, 241, 241);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -4px;
+}
+
+#about .end-point {
+    width: 150px;
+    height: 150px;
+    border-radius: 82px;
+    border: 7px solid rgb(241, 241, 241);
+    background-color: #fed136;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 160px;
+}
+
+#about .end-point > p {
+    text-transform: uppercase;
+    color: white;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+/*about CSS end*/
+
+/*team CSS start*/
+#team {
+    background-color: #f7f7f7;
+    padding-top: 150px;
+}
+
+#team .tittle {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    text-transform: Uppercase;
+}
+
+#team .sub-tittle {
+    margin-top: 18px;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    color: #777;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+#team .members > div > img {
+    width: 224px;
+    height: 224px;
+    border-radius: 124px;
+    border: 7px solid rgb(256, 256, 256);
+}
+
+#team .members {
+    text-align: center;
+}
+
+#team .members > div {
+    display: inline-block;
+}
+
+#team .members > div:nth-of-type(3n - 1) {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+#team .members .name {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+#team .members .position {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    color: #777;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+#team .members .twitter,
+#team .members .facebook,
+#team .members .in {
+    width: 40px;
+    height: 40px;
+    background-color: #222;
+    color: #fff;
+    line-height: 40px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+#team .members .contact {
+    margin-top: 10px;
+}
+
+#team .members .twitter,
+#team .members .facebook {
+    margin-right: 10px;
+}
+
+#team .members .twitter:hover,
+#team .members .facebook:hover,
+#team .members .in:hover {
+    background-color: #fed136;
+    cursor: pointer;
+}
+
+#team .text {
+    margin-top: 55px;
+    color: #777;
+    line-height: 1.75;
+    font-size: 16px;
+    text-align: center;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 160px;
+}
+/*team CSS end*/
+
+/*client CSS start*/
+#client > .layout > div {
+    display: inline-block;
+    margin-right: 92px;
+}
+
+#client > .layout > div:hover {
+    cursor: pointer;
+}
+
+#client > .layout > div:last-child {
+    margin-right: 0;
+}
+
+#client > .layout {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+/*client CSS end*/
+
+/*contact CSS start*/
+#contact {
+    background: url(http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/map-image.png) #222;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+#contact .tittle {
+    color: #fff;
+    font-size: 40px;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+
+#contact .sub-tittle {
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    color: #777;
+    text-align: center;
+}
+
+#contact .input-area {
+    margin-top: 70px;
+}
+
+#contact .input-area .name,
+#contact .input-area .email,
+#contact .input-area .phone {
+    width: 556px;
+    height: 60px;
+    display: block;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    padding-left: 20px;
+}
+
+#contact .input-area .phone {
+    margin-bottom: 0;
+}
+
+#contact .input-area .user-information,
+#contact .input-area .user-message {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#contact .input-area .message {
+    width: 556px;
+    height: 220px;
+    display: block;
+    border-radius: 4px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+#contact .input-area .name::placeholder,
+#contact .input-area .email::placeholder,
+#contact .input-area .phone::placeholder,
+#contact .input-area .message::placeholder {
+    color: rgb(204, 204, 204);
+    font-weight: 700;
+    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+#contact .done-button {
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 220px;
+    height: 70px;
+    font-weight: 700;
+    background-color: #fed136;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 3px;
+    text-transform: Uppercase;
+}
+
+#contact .done-button:hover {
+    cursor: pointer;
+    background-color: #fec503;
+}
+/*contact CSS end*/
+
+/*bottom CSS start*/
+#bottom {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#bottom .contact {
+    display: inline-block;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#bottom .contact .twitter,
+#bottom .contact .facebook,
+#bottom .contact .in {
+    width: 40px;
+    height: 40px;
+    background-color: #222;
+    color: #fff;
+    line-height: 40px;
+    border-radius: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+#bottom .contact .twitter,
+#bottom .contact .facebook {
+    margin-right: 10px;
+}
+
+#bottom .contact .twitter:hover,
+#bottom .contact .facebook:hover,
+#bottom .contact .in:hover {
+    background-color: #fed136;
+    cursor: pointer;
+}
+
+#bottom .copy-right {
+    font-size: 14px;
+    color: #333;
+}
+
+#bottom .policy,
+#bottom .terms {
+    color: #fed136;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#bottom .policy:hover,
+#bottom .terms:hover {
+    text-decoration:underline
+}
