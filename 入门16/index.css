@@ -1,0 +1,213 @@
+/*CSS reset*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*clear float*/
+
+
+.clear-float:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+
+/*CSS of this page*/
+
+
+.layout {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#header {
+    height: 680px;
+    background: center / cover no-repeat url("./header-background.png");
+}
+
+#header ul > li > a {
+    width: 160px;
+    height: 70px;
+    background-color: #261712;
+    color: #D99C0A;
+    line-height: 70px;
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    vertical-align: middle;
+    border-top: 1px solid #3F2A22;
+    border-bottom: 1px solid #3F2A22;
+    border-left: 1px solid #3F2A22;
+    box-sizing: border-box;
+}
+
+#header ul > li > a:last-child {
+    border-right: 1px solid #3F2A22;
+}
+
+#header ul {
+    margin-top: 55px;
+}
+
+#header .logo {
+    width: 240px;
+}
+
+#header .logo img {
+    margin-top: -40px;
+}
+
+#content {
+    background-color: #000000;
+}
+
+#content .job-introduction {
+    height: 220px;
+    width: 100%;
+    float: left;
+    background-color: #120D0A;
+    margin-top: 205px;
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+
+#content ul li p {
+    width: 290px;
+    height: 70px;
+    background-color: #251812;
+    color: #D99C0A;
+    font-weight: 600;
+    line-height: 70px;
+    text-align: center;
+}
+
+#content ul li {
+    margin-right: 13px;
+    position:relative;
+    top: 0;
+    transition: top .3s;
+}
+
+#content ul li:last-child {
+    margin-right: 0;
+}
+
+#content ul li:hover p {
+    color: white;
+}
+
+#content ul li:hover {
+    top: -30px;
+}
+
+#content ul li:hover:after {
+    content:'';
+    width: 290px;
+    height: 30px;
+    display: block;
+}
+
+#footer {
+    background-color: #000000;
+    padding-top: 50px;
+    color: white;
+}
+
+#footer .footer-top {
+    margin-left: 150px;
+}
+
+#footer .footer-top > a {
+    font-size: 14px;
+    color: white;
+}
+
+#footer a > .icon{
+    background-image: url(./icons.png);
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+#footer a > .icon-1 {
+    background-position: 0 0;
+}
+
+#footer a > .icon-2 {
+    background-position: -31px 0;
+}
+
+#footer a > .icon-3 {
+    background-position: 0 -26px;
+}
+
+#footer .footer-top > div {
+    display: inline-block;
+    margin-left: 400px;
+    font-weight: 600;
+}
+
+#footer a .brand-1 {
+    background-image: url(./brands.png);
+    width: 35px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+#footer a .brand-2 {
+    background: url(./brands.png) -36px 0;
+    width: 100px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+#footer .footer-bottom {
+    margin-left: 150px;
+    margin-top: 75px;
+}
+
+#footer .footer-bottom .partner-1 {
+    background: url(./partner1.png) no-repeat;
+    height: 160px;
+    width: 150px;
+    display: inline-block;
+}
+
+#footer .footer-bottom .partner-2 {
+    background: url(./partner2.png) 0 40px no-repeat;
+    height: 160px;
+    width: 150px;
+    display: inline-block;
+}
+
+#footer .white-line {
+    border-top: 1px solid white;
+    width: 1200px;
+}
+
+#footer .tips {
+    margin-top: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: #777777;
+}
