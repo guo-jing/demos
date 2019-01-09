@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .wait {
+            cursor: wait;
+        }
+    </style>
+</head>
+<body>
+<ul></ul>
+<button>加载更多</button>
+<script>
+    var ul = document.querySelector('ul');
+    var button = document.querySelector('button');
+    var requestNewsCount = 5;
+
+    function loadMore(){
+
+        setButtonStatus( 'disable' );
+
+        var index = document.querySelectorAll('ul > li').length;
+        var queryParams = `?index=${index}&length=${requestNewsCount}`;
+
+        ajax('GET', 'http://144.34.133.164:8888/', queryParams, appendNews);
+
+    }
+
+    function ajax(method, url, params, successCallBack) {
+
+        var xhr = new XMLHttpRequest();
+
+        xhr.open(method, url + params);
+        xhr.onreadystatechange = function(){
+
+            if ( xhr.readyState == 4 && xhr.status == 200 ) {
+
+                successCallBack( xhr.responseText );
+
+            } else {
+
+//                console.log( 'error or unfinished' );
+
+            }
+
+        };
+        xhr.send();
+    }
+
+    function appendNews( response ) {
+
+        var responseArray = JSON.parse( response );
+
+        for ( var i = 0; i < responseArray.length; i++) {
+
+            var newLi = document.createElement( 'li' );
+            newLi.innerText = responseArray[i];
+            ul.appendChild( newLi );
+
+        }
+
+        setButtonStatus('enable');
+
+    }
+
+    function setButtonStatus (flag) {
+
+        if ( flag === 'enable' ) {
+
+            button.removeAttribute('disabled');
+            button.classList.remove('wait');
+
+        } else if ( flag === 'disable' ) {
+
+            button.setAttribute( 'disabled', 'true' );
+            button.classList.add('wait');
+        }
+    }
+
+    button.addEventListener('click', loadMore);
+</script>
+</body>
+</html>
